@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         
-        PATH ='/bin/mvn'
+       
         //PATH = "/usr/local/bin:$PATH"
         JAVA_HOME = '/opt/usr/lib/jvm/java-openjdk'
     }
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'git clone https://https://github.com/hir09/jenkins-lambda.git'
                 echo 'Hello world!'
-                sh "${mvnCMD} clean package"
+                
             }
         }
     }
