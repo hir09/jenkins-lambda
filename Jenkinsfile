@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'git clone https://https://github.com/hir09/jenkins-lambda.git'
+               sh "${mvnCMD} clean package"
                 echo 'Hello world!'
                 
             }
