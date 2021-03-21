@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh "${mvnCMD} clean package"
+               sh 'mvn -Duser.home=/tmp clean package'
                 echo 'Hello world!'
                 
             }
