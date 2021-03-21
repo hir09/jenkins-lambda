@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'git clone https://github.com/carlossg/jenkinsfile-runner-lambda-example.git'
+                sh 'git clone https://https://github.com/hir09/jenkins-lambda.git'
                 echo 'Hello world!'
                 sh 'mvn -Duser.home=/tmp clean package'
             }
