@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'git clone https://https://github.com/hir09/jenkins-lambda.git'
                 echo 'Hello world!'
-                sh 'mvn -Duser.home=/tmp clean package'
+                sh "${mvnCMD} clean package"
             }
         }
     }
