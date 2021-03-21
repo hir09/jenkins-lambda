@@ -3,7 +3,7 @@ pipeline {
     environment {
         
        
-        PATH = "/usr/local/bin:$PATH"
+        PATH = '/usr/local/bin:$PATH'
         JAVA_HOME = '/opt/usr/lib/jvm/java-openjdk'
     }
     stages {
