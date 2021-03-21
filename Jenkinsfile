@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         
-        PATH ='/bin/mvn/'
+        PATH ='/bin/mvn'
         //PATH = "/usr/local/bin:$PATH"
         JAVA_HOME = '/opt/usr/lib/jvm/java-openjdk'
     }
